@@ -8,6 +8,7 @@ import Principal.Principal;
 public class Persona {
     private String nombre;
     private String apellido;
+    private int id;
   
     
     public Persona() {
@@ -18,6 +19,8 @@ public class Persona {
         this();
         this.nombre = nombre;
         this.apellido = apellido;
+        this.id=Principal.contador;
+        
         
     }
 
@@ -37,22 +40,24 @@ public class Persona {
         this.apellido = apellido;
     }
 
-
-
-
-    
-    
-
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
+        sb.append(", id=").append(id);
         sb.append("Persona{nombre=").append(nombre);
         sb.append(", apellido=").append(apellido);
-        sb.append(", contador=").append(Principal.contador);
+       
         sb.append('}');
         return sb.toString();
     }
+
+
+
+
     
+    
+
+
     
     
     

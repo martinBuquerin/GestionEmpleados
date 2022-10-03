@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+crear clase persona con nombre apellido nombre id y ademas deberemos de tener un contador
  */
 package Principal;
 
@@ -26,6 +24,9 @@ public class Principal {
         System.out.println(contador);
         Persona per3 = new Persona("martin","bun");
         System.out.println(contador);
+        System.out.println(per1);
+        System.out.println(per2);
+        System.out.println(per3);
         
     }
     
